@@ -231,6 +231,13 @@
           return;
         }
 
+        if (url.includes("youtube.com") || url.includes("youtu.be")) {
+          alert(
+            "YouTube is currently unsupported. Try Instagram, Twitter, or Reddit instead."
+          );
+          return;
+        }
+
         progress.style.display = "block";
         progressBar.style.width = "10%";
         message.innerText = "Downloading... 🍿";
