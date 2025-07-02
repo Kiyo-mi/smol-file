@@ -239,7 +239,7 @@
         const formData = new FormData();
         formData.append("url", url);
 
-        fetch("http://127.0.0.1:5000/compress", {
+        fetch("https://smol-file-site-backend.onrender.com/compress", {
           method: "POST",
           body: formData,
         })
